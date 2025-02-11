@@ -6,6 +6,8 @@ view.get('/test', (req,res) => {
     res.send("view is live");
 });
 
-view.get('/');
+view.get('/', (req, res) => {
+    res.render('index');
+});
 
 export default view;
